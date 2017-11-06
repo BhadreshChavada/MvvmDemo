@@ -1,0 +1,59 @@
+{
+  "message": "object",
+  "data": [
+    {
+      "State": [
+        {
+          "StateName": "Gujarat",
+          "stateId": "1",
+          "City": [
+            {
+              "CityName": "Ahmedabad",
+              "cityId": "1"
+            },
+            {
+              "CityName": "Surat",
+              "cityId": "2"
+            },
+            {
+              "CityName": "Rajkot",
+              "cityId": "3"
+            }
+          ]
+        },
+        {
+          "StateName": "Delhi",
+          "stateId": "2",
+          "City": [
+            {
+              "CityName": "New Delhi",
+              "cityId": "4"
+            },
+            {
+              "CityName": "Gurugram",
+              "cityId": "5"
+            }
+          ]
+        },
+        {
+          "StateName": "Uttarpradesh",
+          "stateId": "3",
+          "City": [
+            {
+              "CityName": "Allahabad",
+              "cityId": "6"
+            },
+            {
+              "CityName": "Kanpur",
+              "cityId": "7"
+            },
+            {
+              "CityName": "Lucknow",
+              "cityId": "8"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

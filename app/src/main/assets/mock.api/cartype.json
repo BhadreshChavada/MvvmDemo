@@ -1,0 +1,51 @@
+{
+  "message": "object",
+  "data": [
+    {
+      "carType": "Hatchbacks",
+      "carTypeId": "1",
+      "carModel": [
+        {
+          "carModelName": "Ultracompact car",
+          "carModelId": "1"
+        },
+        {
+          "carModelName": "City car",
+          "carModelId": "2"
+        },
+        {
+          "carModelName": "Supermini/subcompact car",
+          "carModelId": "3"
+        }
+      ]
+    },
+    {
+      "carType": "Family car",
+      "carTypeId": "2",
+      "carModel": [
+        {
+          "carModelName": " Large family / mid-size",
+          "carModelId": "4"
+        }
+      ]
+    },
+    {
+      "carType": "sedans",
+      "carTypeId": "3",
+      "carModel": [
+        {
+          "carModelName": " Large family / mid-size",
+          "carModelId": "6"
+        },
+        {
+          "carModelName": " Full size / large",
+          "carModelId": "7"
+        },
+        {
+          "carModelName": " Crossover SUV",
+          "carModelId": "8"
+        }
+      ]
+    }
+  ]
+}

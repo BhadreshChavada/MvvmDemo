@@ -1,0 +1,15 @@
+{
+  "message":"object",
+  "data": [{
+    "foo": {
+      "type": "string"
+    },
+    "bar": {
+      "type": "integer"
+    },
+    "baz": {
+      "type": "boolean"
+    }
+  }]
+}
+

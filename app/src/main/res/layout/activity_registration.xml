@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="mainViewModel"
+            type="com.kioskdriver.viewModel.RegistrationViewModel" />
+
+    </data>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true">
+
+
+            <TextView
+                android:id="@+id/txt_select_photo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="17dp"
+                android:layout_marginStart="17dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/select_photo"
+                app:layout_constraintBottom_toBottomOf="@+id/btn_select_photo"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/btn_select_photo"
+                app:layout_constraintVertical_bias="0.0"
+                tools:layout_constraintLeft_creator="1" />
+
+            <Button
+                android:id="@+id/btn_select_photo"
+                android:layout_width="173dp"
+                android:layout_height="42dp"
+                android:layout_marginEnd="75dp"
+                android:layout_marginLeft="75dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="75dp"
+                android:layout_marginTop="33dp"
+                android:onClick="@{mainViewModel::RegistrationClick}"
+                android:text="@string/select_photo"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toRightOf="@+id/txt_select_photo"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_constraintLeft_creator="1"
+                tools:layout_constraintRight_creator="1"
+                tools:layout_constraintTop_creator="1"
+                tools:layout_editor_absoluteY="39dp" />
+
+            <EditText
+                android:id="@+id/edt_full_name"
+                android:layout_width="0dp"
+                android:layout_height="46dp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:hint="@string/fullName"
+                android:inputType="textPersonName"
+                app:layout_constraintLeft_toLeftOf="@+id/txt_select_photo"
+                app:layout_constraintRight_toRightOf="@+id/btn_select_photo"
+                app:layout_constraintTop_toBottomOf="@+id/btn_select_photo"
+                tools:layout_constraintLeft_creator="1"
+                tools:layout_constraintRight_creator="1"
+                tools:layout_constraintTop_creator="1" />
+
+            <EditText
+                android:id="@+id/edt_email"
+                android:layout_width="0dp"
+                android:layout_height="46dp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:hint="@string/email"
+                android:inputType="textEmailAddress"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="@+id/txt_select_photo"
+                app:layout_constraintRight_toRightOf="@+id/btn_select_photo"
+                app:layout_constraintTop_toBottomOf="@+id/edt_full_name"
+                tools:layout_constraintLeft_creator="1"
+                tools:layout_constraintRight_creator="1"
+                tools:layout_constraintTop_creator="1" />
+
+            <EditText
+                android:id="@+id/edt_contact_no"
+                android:layout_width="0dp"
+                android:layout_height="46dp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:hint="@string/contactno"
+                android:inputType="numberDecimal"
+                android:maxLength="10"
+                app:layout_constraintLeft_toLeftOf="@+id/txt_select_photo"
+                app:layout_constraintRight_toRightOf="@+id/btn_select_photo"
+                app:layout_constraintTop_toBottomOf="@+id/edt_email"
+                tools:layout_constraintLeft_creator="1"
+                tools:layout_constraintRight_creator="1" />
+
+            <Spinner
+                android:id="@+id/spinner_state"
+                android:layout_width="0dp"
+                android:layout_height="46dp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="@+id/txt_select_photo"
+                app:layout_constraintRight_toRightOf="@+id/btn_select_photo"
+                app:layout_constraintTop_toBottomOf="@+id/edt_contact_no"
+                tools:layout_constraintLeft_creator="1"
+                tools:layout_constraintRight_creator="1" />
+
+            <Spinner
+                android:id="@+id/spinner_city"
+                android:layout_width="0dp"
+                android:layout_height="46dp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="10dp"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="@+id/txt_select_photo"
+                app:layout_constraintRight_toRightOf="@+id/btn_select_photo"
+                app:layout_constraintTop_toBottomOf="@+id/spinner_state"
+                tools:layout_constraintLeft_creator="1"
+                tools:layout_constraintRight_creator="1" />
+
+            <Spinner
+                android:id="@+id/spinner_car_type"
+                android:layout_width="0dp"
+                android:layout_height="46dp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="10dp"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="@+id/txt_select_photo"
+                app:layout_constraintRight_toRightOf="@+id/btn_select_photo"
+                app:layout_constraintTop_toBottomOf="@+id/spinner_city"
+                tools:layout_constraintLeft_creator="1"
+                tools:layout_constraintRight_creator="1" />
+
+            <Spinner
+                android:id="@+id/spinner_car_model"
+                android:layout_width="0dp"
+                android:layout_height="46dp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="10dp"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="@+id/txt_select_photo"
+                app:layout_constraintRight_toRightOf="@+id/btn_select_photo"
+                app:layout_constraintTop_toBottomOf="@+id/spinner_car_type"
+                tools:layout_constraintLeft_creator="1"
+                tools:layout_constraintRight_creator="1" />
+
+            <EditText
+                android:id="@+id/edt_car_no"
+                android:layout_width="0dp"
+                android:layout_height="46dp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="10dp"
+                android:hint="@string/car_no"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="@+id/txt_select_photo"
+                app:layout_constraintRight_toRightOf="@+id/btn_select_photo"
+                app:layout_constraintTop_toBottomOf="@+id/spinner_car_model"
+                tools:layout_constraintLeft_creator="1"
+                tools:layout_constraintRight_creator="1" />
+
+            <EditText
+                android:id="@+id/edt_seating_capacity"
+                android:layout_width="0dp"
+                android:layout_height="46dp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="10dp"
+                android:hint="@string/seating_capacity"
+                android:inputType="number"
+                android:maxLength="2"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="@+id/txt_select_photo"
+                app:layout_constraintRight_toRightOf="@+id/btn_select_photo"
+                app:layout_constraintTop_toBottomOf="@+id/edt_car_no"
+                tools:layout_constraintLeft_creator="1"
+                tools:layout_constraintRight_creator="1" />
+
+            <EditText
+                android:id="@+id/edt_licence_no"
+                android:layout_width="0dp"
+                android:layout_height="46dp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="10dp"
+                android:hint="@string/licence_no"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="@+id/txt_select_photo"
+                app:layout_constraintRight_toRightOf="@+id/btn_select_photo"
+                app:layout_constraintTop_toBottomOf="@+id/edt_seating_capacity"
+                tools:layout_constraintLeft_creator="1"
+                tools:layout_constraintRight_creator="1" />
+
+            <EditText
+                android:id="@+id/edt_car_purchase_year"
+                android:layout_width="0dp"
+                android:layout_height="46dp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="10dp"
+                android:hint="@string/car_purchase_year"
+                android:inputType="number"
+                android:maxLength="4"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="@+id/txt_select_photo"
+                app:layout_constraintRight_toRightOf="@+id/btn_select_photo"
+                app:layout_constraintTop_toBottomOf="@+id/edt_licence_no"
+                tools:layout_constraintLeft_creator="1"
+                tools:layout_constraintRight_creator="1" />
+
+            <EditText
+                android:id="@+id/edt_aadhar_no"
+                android:layout_width="0dp"
+                android:layout_height="46dp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="10dp"
+                android:hint="@string/aadhar_no"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="@+id/txt_select_photo"
+                app:layout_constraintRight_toRightOf="@+id/btn_select_photo"
+                app:layout_constraintTop_toBottomOf="@+id/edt_car_purchase_year"
+                tools:layout_constraintLeft_creator="1"
+                tools:layout_constraintRight_creator="1" />
+
+            <EditText
+                android:id="@+id/edt_driver_address"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="4dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="10dp"
+                android:hint="@string/driver_address"
+                android:maxLines="3"
+                android:minLines="2"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="@+id/txt_select_photo"
+                app:layout_constraintRight_toRightOf="@+id/btn_select_photo"
+                app:layout_constraintTop_toBottomOf="@+id/edt_aadhar_no"
+                tools:layout_constraintLeft_creator="1"
+                tools:layout_constraintRight_creator="1" />
+
+            <EditText
+                android:id="@+id/edt_imei_no"
+                android:layout_width="0dp"
+                android:layout_height="46dp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="10dp"
+                android:hint="@string/imei_no"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="@+id/txt_select_photo"
+                app:layout_constraintRight_toRightOf="@+id/btn_select_photo"
+                app:layout_constraintTop_toBottomOf="@+id/edt_driver_address"
+                tools:layout_constraintLeft_creator="1"
+                tools:layout_constraintRight_creator="1" />
+
+            <EditText
+                android:id="@+id/edt_password"
+                android:layout_width="0dp"
+                android:layout_height="46dp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="10dp"
+                android:hint="@string/password"
+                android:inputType="textPassword"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="@+id/txt_select_photo"
+                app:layout_constraintRight_toRightOf="@+id/btn_select_photo"
+                app:layout_constraintTop_toBottomOf="@+id/edt_imei_no"
+                tools:layout_constraintLeft_creator="1"
+                tools:layout_constraintRight_creator="1" />
+
+            <EditText
+                android:id="@+id/edt_confirm_password"
+                android:layout_width="0dp"
+                android:layout_height="46dp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="10dp"
+                android:hint="@string/confirm_password"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="@+id/txt_select_photo"
+                app:layout_constraintRight_toRightOf="@+id/btn_select_photo"
+                app:layout_constraintTop_toBottomOf="@+id/edt_password"
+                tools:layout_constraintLeft_creator="1"
+                tools:layout_constraintRight_creator="1" />
+
+            <Button
+                android:id="@+id/btn_submit"
+                android:layout_width="0dp"
+                android:layout_height="46dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="14dp"
+                android:text="@string/submit"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="@+id/txt_select_photo"
+                app:layout_constraintRight_toRightOf="@+id/btn_select_photo"
+                app:layout_constraintTop_toBottomOf="@+id/edt_confirm_password"
+                tools:layout_constraintLeft_creator="1"
+                tools:layout_constraintRight_creator="1"
+                android:onClick="@{mainViewModel::RegistrationClick}" />
+
+
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+</layout>

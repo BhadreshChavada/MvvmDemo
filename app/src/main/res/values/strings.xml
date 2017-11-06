@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">KioskDriver</string>
+    <string name="preference">Preference</string>
+    <string name="pleaseWait">Please Wait...</string>
+    <string name="mobile_no">Mobile No.</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="select_photo">Choose Photo</string>
+    <string name="fullName">Full Name</string>
+    <string name="email">Email</string>
+    <string name="contactno">Contact No</string>
+    <string name="car_no">Car No.</string>
+    <string name="seating_capacity">Seating Capacity</string>
+    <string name="licence_no">Licence No.</string>
+    <string name="car_purchase_year">Car Purchase Year</string>
+    <string name="aadhar_no">Aadhar No.</string>
+    <string name="driver_address">Driver Address</string>
+    <string name="imei_no">IMEI No.</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="submit">Submit</string>
+</resources>

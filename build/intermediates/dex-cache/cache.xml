@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/home/AMD21/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit2/converter-scalars/2.1.0/7c0d7c8f6e52115bb82fa018d81a8d0cae35dde5/converter-scalars-2.1.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="7c0d7c8f6e52115bb82fa018d81a8d0cae35dde5">
+        <dex dex="/home/AMD21/GitLabProject/emxcel_KioskDriver/app/build/intermediates/pre-dexed/mock/debug/converter-scalars-2.1.0_cfd946e8ad38a23052a67e32f3f8bdc19e6d1ff6.jar" />
+    </item>
+
+</items>

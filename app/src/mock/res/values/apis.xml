@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="api_base">http://mock.api</string>
+
+    <string name="api_login">/login.json</string>
+
+    <string name="api_otpverification">/verifyotp.json</string>
+</resources>
